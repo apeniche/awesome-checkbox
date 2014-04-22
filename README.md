@@ -6,6 +6,10 @@
 	Awesome checkbox works great with Font-awesome and bootstrap Glyphicons, but you can also create custom css classes and it will work just as well.
 </p>
 
+<h3>DEMO</h3>
+<p>
+	you can see it <a href="http://apeniche.github.io/awesome-checkbox">here</a>.
+
 <h3>Intallation</h3>
 <p>
 	1. Download the code files: awesome-checkbox.js and awesome-checkbox.css.
@@ -35,5 +39,5 @@
 <h4>Ruby on Rails</h4>
 <p>If you are using ruby on rails you can use a helper that will look like this:</p>
 <p>
-	check_box_tag "checkbox2", 1, true, :class => 'awesome-checkbox', 'data-icon-checked' => 'fa fa-check-circle-o', 'data-icon-unchecked' => 'fa fa-circle-o'
+	check_box_tag "checkbox2", 1, true, :class => 'awesome-checkbox', :data => {'icon-checked' => 'fa fa-check-circle-o', 'icon-unchecked' => 'fa fa-circle-o'}
 </p>
