@@ -8,7 +8,7 @@
 
 <h3>DEMO</h3>
 <p>
-	you can see it <a href="http://apeniche.github.io/awesome-checkbox">here</a>.
+	you can see it <a href="http://apeniche.github.io/awesome-checkbox" target="_blank">here</a>.
 
 <h3>Intallation</h3>
 <p>

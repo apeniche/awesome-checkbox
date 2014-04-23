@@ -13,7 +13,7 @@ $(document).ready(function(){
 function initialize_awesome_checkbox(){
 	$('input[type="checkbox"].awesome-checkbox').each(function(index){
 		if(!$(this).hasClass('initialized')){
-			$(this).before('<label for="'+ $(this).attr('id') + '">' + get_awesome_checkbox_icon(this) + '</label>');
+			$(this).before('<label class="awesome-checkbox-label" for="'+ $(this).attr('id') + '">' + get_awesome_checkbox_icon(this) + '</label>');
 			$(this).addClass('initialized');
 		}
 	});
