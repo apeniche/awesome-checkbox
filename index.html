@@ -142,12 +142,6 @@
 		</div>
 		</div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-
 <h3>Intallation</h3>
 <p>
 	1. Download the code <a>here</a>.
@@ -176,9 +170,9 @@ $ git checkout gh-pages
 </code></pre>
 <h4>Ruby on Rails</h4>
 <p>If you are using ruby on rails you can use a helper that will look like this:</p>
-<p>
+<pre><code>
 	check_box_tag "checkbox-2", 1, true, :class => 'awesome-checkbox', 'data-icon-checked' => 'fa fa-check-circle-o', 'data-icon-unchecked' => 'fa fa-circle-o'
-</p>
+</code></pre>
 <br>
 <p> Both will produce: </p>
 <p style="font-size:16px;">
@@ -197,6 +191,27 @@ $ git checkout gh-pages
     </div>
 
     
-  <script src="/javascripts/awesome-checkbox.js"></script>
+  <script>
+	$(document).ready(function(){
+		initialize_awesome_checkbox();
+		$(document).on('change', '.awesome-checkbox', function(){
+			$('label[for="'+ $(this).attr('id') +'"]').html(get_awesome_checkbox_icon(this));
+		});
+	});
+
+	function initialize_awesome_checkbox(){
+		$('input[type="checkbox"].awesome-checkbox').each(function(index){
+			if(!$(this).hasClass('initialized')){
+				$(this).before('<label for="'+ $(this).attr('id') + '">' + get_awesome_checkbox_icon(this) + '</label>');
+				$(this).addClass('initialized');
+			}
+		});
+	}
+
+	function get_awesome_checkbox_icon(selector){
+		var icon = $(selector).is(':checked') ? $(selector).data('icon-checked') : $(selector).data('icon-unchecked')
+		return '<i class="' + icon + '"></i>';
+	}
+  </script>
   </body>
 </html>
