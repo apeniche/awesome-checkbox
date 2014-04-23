@@ -36,7 +36,7 @@
 		<p>
 			When using font-awesome you can set the size and color of the checkbox just by styling the parent container, you can select any two icons to be used in the 'checked' and 'unchecked' states.
 		</p>
-		<div style="width:350px; margin:0 auto;">
+		<div style="width:370px; margin:0 auto;">
 		<div style="display:inline-block; width:50px; text-align:center;">
 			<p style="font-size:14px;">
 				<input checked="checked" class="awesome-checkbox" data-icon-checked="fa fa-check-circle-o" data-icon-unchecked="fa fa-circle-o" id="checkbox1" name="checkbox1" type="checkbox" value="1">
@@ -165,13 +165,11 @@
 
 <h3>Example</h3>
 <h4>Plan HTML</h4>
-<pre><code>
-	&lt;input checked=&quot;checked&quot; class=&quot;awesome-checkbox&quot; data-icon-checked=&quot;fa fa-check-circle-o&quot; data-icon-unchecked=&quot;fa fa-circle-o&quot; id=&quot;checkbox-2&quot; name=&quot;checkbox-2&quot; type=&quot;checkbox&quot; value=&quot;1&quot;&gt;
+<pre><code>&lt;input checked=&quot;checked&quot; class=&quot;awesome-checkbox&quot; data-icon-checked=&quot;fa fa-check-circle-o&quot; data-icon-unchecked=&quot;fa fa-circle-o&quot; id=&quot;checkbox-2&quot; name=&quot;checkbox-2&quot; type=&quot;checkbox&quot; value=&quot;1&quot;&gt;
 </code></pre>
 <h4>Ruby on Rails</h4>
 <p>If you are using ruby on rails you can use a helper that will look like this:</p>
-<pre><code>
-	check_box_tag "checkbox-2", 1, true, :class => 'awesome-checkbox', 'data-icon-checked' => 'fa fa-check-circle-o', 'data-icon-unchecked' => 'fa fa-circle-o'
+<pre><code>check_box_tag "checkbox-2", 1, true, :class => 'awesome-checkbox', 'data-icon-checked' => 'fa fa-check-circle-o', 'data-icon-unchecked' => 'fa fa-circle-o'
 </code></pre>
 <br>
 <p> Both will produce: </p>
