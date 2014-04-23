@@ -162,7 +162,10 @@
 <p>
 	3. Also add the data-icon-unchecked attribute to the checkbox and set it to the class(es) you want to use.
 </p>
-
+<p>
+	NOTE: You don't have to initialize awesome checkbox, however, if you get the HTML asynchronously (eg: with an ajax request) you need to initialize it manually running the following js function:
+</p>
+<pre><code>initialize_awesome_checkbox()</code></pre>
 <h3>Example</h3>
 <h4>Plan HTML</h4>
 <pre><code>&lt;input checked=&quot;checked&quot; class=&quot;awesome-checkbox&quot; data-icon-checked=&quot;fa fa-check-circle-o&quot; data-icon-unchecked=&quot;fa fa-circle-o&quot; id=&quot;checkbox-2&quot; name=&quot;checkbox-2&quot; type=&quot;checkbox&quot; value=&quot;1&quot;&gt;
