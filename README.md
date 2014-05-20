@@ -1,6 +1,6 @@
 <h1>Awesome checkbox</h1>
 <p>
-	This is a simple piece of js/css I created that turned out to be very handy in all projects I've worked on afterwards. It allows you to easily customize you checkboxes to make them look the way you want.
+	This is a simple piece of js/css I created that turned out to be very handy in all projects I've worked on afterwards. It allows you to easily customize your checkboxes to make them look the way you want.
 </p>
 <p>
 	Awesome checkbox works great with Font-awesome and bootstrap Glyphicons, but you can also create custom css classes and it will work just as well.
